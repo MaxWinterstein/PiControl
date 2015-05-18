@@ -1,0 +1,52 @@
+{
+  "Büro": [
+    {
+      "id":1111101,
+      "name": "Basteleck"
+    },
+    {
+      "id":2,
+      "name": "dev2"
+    },
+    {
+      "id":3,
+      "name": "dev3"
+    },
+    {
+      "id":4,
+      "name": "dev4"
+    }
+  ],
+  "Keller": [
+     {
+     "id":1111101,
+      "name": "Werkbank"
+    },
+    {
+      "id":6,
+      "name": "dev6"
+    },
+    {
+      "id":7,
+      "name": "dev7"
+    },
+    {
+      "id":8,
+      "name": "dev8"
+    }
+],
+  "Wohnzimmer": [
+     {
+     "id":9,
+      "name": "dev9"
+    },
+    {
+      "id":10,
+      "name": "dev10"
+    },
+    {
+      "id":11,
+      "name": "dev11"
+    }
+]
+}
