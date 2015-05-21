@@ -1,52 +1,54 @@
-{
-  "Büro": [
+ [{"title": "Buero",
+   "items": [
     {
-      "id":1111101,
-      "name": "Basteleck"
+      "id":"1111100",
+      "title": "Basteleck"
     },
     {
-      "id":2,
-      "name": "dev2"
+      "id":"1111101",
+      "title": "dev2"
     },
     {
-      "id":3,
-      "name": "dev3"
+      "id":"1111110",
+      "title": "dev3"
     },
     {
-      "id":4,
-      "name": "dev4"
+      "id":"1111111",
+      "title": "dev4"
     }
-  ],
-  "Keller": [
+  ]},
+  {"title": "Keller",
+   "items": [
      {
-     "id":1111101,
-      "name": "Werkbank"
+     "id":"0111100",
+      "title": "Werkbank"
     },
     {
-      "id":6,
-      "name": "dev6"
+      "id":"0111101",
+      "title": "dev6"
     },
     {
-      "id":7,
-      "name": "dev7"
+      "id":"0111110",
+      "title": "dev7"
     },
     {
-      "id":8,
-      "name": "dev8"
+      "id":"0111111",
+      "title": "dev8"
     }
-],
-  "Wohnzimmer": [
+  ]},
+  {"title": "Wohnzimmer",
+   "items": [
      {
-     "id":9,
-      "name": "dev9"
+     "id":"1011100",
+      "title": "dev9"
     },
     {
-      "id":10,
-      "name": "dev10"
+      "id":"1011101",
+      "title": "dev10"
     },
     {
-      "id":11,
-      "name": "dev11"
+      "id":"1011110",
+      "title": "dev11"
     }
+  ]}
 ]
-}
