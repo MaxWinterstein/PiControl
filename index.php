@@ -63,8 +63,8 @@ include 'backend.php';
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <?php 
-                        foreach ($_devices as $device => $name) {
-                        	echo '<li><a href="#' . $device . '">' . $device . '</a></li>' . PHP_EOL;
+                        foreach ($_rooms as $room) {
+                        	echo '<li><a href="#' . $room['title'] . '">' . $room['title'] . '</a></li>' . PHP_EOL;
 							
                     	}
 			  		?>
@@ -81,12 +81,12 @@ include 'backend.php';
 
 
         <?php 
-            foreach ($_devices as $location => $device) {
-            	echo '<a name="' . $location . '"></a>' . PHP_EOL;
+            foreach ($_rooms as $room) {
+            	echo '<a name="' . $room['title'] . '"></a>' . PHP_EOL;
 				echo '    <div class="col-md-4">' . PHP_EOL;
-			    echo '         <h1>' . $location . '</h1>'. PHP_EOL;
+			    echo '         <h1>' . $room["title"] . '</h1>'. PHP_EOL;
 				
-				foreach ($device as $d){
+				foreach ($room["items"] as $d){
 					
                 echo '         <div class="checkbox">' . PHP_EOL;
                 echo '         <label>'. PHP_EOL;
@@ -96,7 +96,7 @@ include 'backend.php';
                     
                 
                 echo ' data-toggle="toggle">'. PHP_EOL;
-                echo '             ' . $d["name"]. PHP_EOL;
+                echo '             ' . $d["title"]. PHP_EOL;
 
 
 ?>				
