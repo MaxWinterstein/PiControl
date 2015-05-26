@@ -107,7 +107,6 @@ include 'backend.php';
     	
     	    if($('#toggle-<?php echo $d["id"];?>').is(":checked")){
                 
-                console.debug("Checkbox is checked.");
                 xmlhttp=new XMLHttpRequest();
 				xmlhttp.onreadystatechange=function()
 			  {
@@ -123,7 +122,6 @@ include 'backend.php';
         }
             else if($('#toggle-<?php echo $d["id"];?>').is(":not(:checked)")){
                 
-                console.debug("Checkbox is unchecked.");
                 
                         xmlhttp=new XMLHttpRequest();
 				xmlhttp.onreadystatechange=function()
@@ -156,21 +154,6 @@ include 'backend.php';
   		?>
 
         
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('input[type="checkbox"]').click(function(){
-            if($(this).is(":checked")){
-                alert("Checkbox is checked.");
-                console.debug("Checkbox is checked.");
-            }
-            else if($(this).is(":not(:checked)")){
-                alert("Checkbox is unchecked.");
-                console.debug("Checkbox is unchecked.");
-            }
-        });
-    });
-</script>
-
 
     </div>
     </div><!-- /.container -->

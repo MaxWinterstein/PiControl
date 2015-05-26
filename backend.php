@@ -5,6 +5,9 @@ define('DEBUG',true);
 include 'config/config.php';
 
 $_json = file_get_contents("config/devices.json");
+if ($_json == false) die("where the fuck is the devices.json?");
+
+
 $_rooms = json_decode($_json, true);
 
 
@@ -30,7 +33,7 @@ foreach ($_GET as $key => $value) {
 
 function turnOn($id)  {
     global $target, $port;
-    $output = $id . "15"; // 1 -> on ; 5-> delay 5s
+    $output = $id . "1";
     if (DEBUG) { error_log("Picontrol: turnOn " . $id); }
     $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP) or die("Could not create socket\n");
     socket_bind($socket, $_SERVER['SERVER_ADDR']) or die("Could not bind to socket\n");
@@ -41,15 +44,13 @@ function turnOn($id)  {
 
 function turnOff($id)  {
     global $target, $port;
-    $output = $id . "05"; // 1 -> on ; 5-> delay 5s
+    $output = $id . "0";
     if (DEBUG) { error_log("Picontrol: turnOff " . $id); }
-
-    $output = $id . "0"; // 1 -> on ; 5-> delay 5s
-  $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP) or die("Could not create socket\n");
-  socket_bind($socket,  $_SERVER['SERVER_ADDR']) or die("Could not bind to socket\n");
-  socket_connect($socket, $target, $port) or die("Could not connect to socket\n");
-  socket_write($socket, $output, strlen ($output)) or die("Could not write output\n");
-  socket_close($socket);
+    $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP) or die("Could not create socket\n");
+    socket_bind($socket,  $_SERVER['SERVER_ADDR']) or die("Could not bind to socket\n");
+    socket_connect($socket, $target, $port) or die("Could not connect to socket\n");
+    socket_write($socket, $output, strlen ($output)) or die("Could not write output\n");
+    socket_close($socket);
 }
 
 function getStatus($id)  {

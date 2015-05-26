@@ -1,0 +1,54 @@
+ [{"title": "room1",
+   "items": [
+    {
+      "id":"1111101",
+      "title": "dev1"
+    },
+    {
+      "id":"1111102",
+      "title": "dev2"
+    },
+    {
+      "id":"1111103",
+      "title": "dev3"
+    },
+    {
+      "id":"1111104",
+      "title": "dev4"
+    }
+  ]},
+  {"title": "room2",
+   "items": [
+     {
+     "id":"1110101",
+      "title": "dev1"
+    },
+    {
+      "id":"1110102",
+      "title": "dev2"
+    },
+    {
+      "id":"1110103",
+      "title": "dev3"
+    },
+    {
+      "id":"1110104",
+      "title": "dev4"
+    }
+  ]},
+  {"title": "room3",
+   "items": [
+     {
+     "id":"1110001",
+      "title": "dev1"
+    },
+    {
+      "id":"1110002",
+      "title": "dev2"
+    },
+    {
+      "id":"1110003",
+      "title": "dev3"
+    }
+  ]}
+]
